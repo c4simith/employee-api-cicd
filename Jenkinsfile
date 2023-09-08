@@ -20,7 +20,7 @@ pipeline {
 		}
 		stage('Deploy'){
 			steps {
-				sh "nohup java  -jar target/employee-0.0.1-SNAPSHOT.jar >> server.log 2>&1 &"
+				sh "nohup java -jar ./target/employee-0.0.1-SNAPSHOT.jar >> server.log 2>&1 &"
 			}
 		}
 
